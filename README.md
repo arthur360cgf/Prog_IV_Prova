@@ -1,5 +1,5 @@
 # Repository to pull the code of Prog.IV test  
-  **collaborators**
+  **COLLARBORATORS**
 
 -Arthur Aragão
 
