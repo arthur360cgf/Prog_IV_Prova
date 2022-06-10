@@ -1,8 +1,8 @@
 # Repository to pull the code of Prog.IV test  
-  #collaborators
+  **collaborators**
 
-#-Arthur Aragão
+-Arthur Aragão
 
-#-Karlisson Brendo
+-Karlisson Brendo
 
-#-Henrique Gleison
+-Henrique Gleison
