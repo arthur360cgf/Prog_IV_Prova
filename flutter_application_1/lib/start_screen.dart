@@ -8,18 +8,24 @@ class Joken extends StatefulWidget {
 }
 
 class _JokenState extends State<Joken> {
+  //variáveis
   var _imageApp = AssetImage("");
 
   var _mesage = "Escolha uma opção";
+
   var _userWin = 0;
+
   var _computerWin = 0;
+
   var _draw = 0;
 
   void _selectedOption(String userChoice) {
+    //função para randomizar a jogada do computador
     var options = ["pedra", "papel", "tesoura"];
     var number = Random().nextInt(3);
     var choseApp = options[number];
 
+    //Aqui irá exibir a imagem que o Computador escolheu
     switch (choseApp) {
       case "pedra":
         setState(() {
@@ -38,7 +44,7 @@ class _JokenState extends State<Joken> {
           this._imageApp = AssetImage("");
         });
     }
-
+    // Aqui será validado os casos de Jogadas do ganhador
     if ((userChoice == "pedra" && choseApp == "tesoura") ||
         (userChoice == "tesoura" && choseApp == "papel") ||
         (userChoice == "papel" && choseApp == "pedra")) {
@@ -70,7 +76,7 @@ class _JokenState extends State<Joken> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
             child: Text("Escolha o App",
                 textAlign: TextAlign.center,
