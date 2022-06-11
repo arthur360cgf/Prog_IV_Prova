@@ -4,19 +4,23 @@ import 'package:flutter/material.dart';
 
 class Joken extends StatefulWidget {
   @override
+  //stado inicial
   _JokenState createState() => _JokenState();
 }
 
+//criando classe so jokenpô
 class _JokenState extends State<Joken> {
   //variáveis
+  //imagem do aplicativo
   var _imageApp = AssetImage("");
 
+  //mensagem pra escolher uma opção
   var _mesage = "Escolha uma opção";
-
+  //contador de vitorias do usuario
   var _userWin = 0;
-
+  //contador de vitorias do computador
   var _computerWin = 0;
-
+  //contador de empates
   var _draw = 0;
 
   void _selectedOption(String userChoice) {
@@ -78,7 +82,14 @@ class _JokenState extends State<Joken> {
         children: <Widget>[
           const Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
-            child: Text("Escolha o App",
+            child: Text("Escolha do Comutador",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+          Image(image: this._imageApp),
+          Padding(
+            padding: EdgeInsets.only(top: 32, bottom: 16),
+            child: Text(this._mesage,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           ),
@@ -95,6 +106,10 @@ class _JokenState extends State<Joken> {
                   "",
                   height: 100,
                 ),
+              ),
+              GestureDetector(
+                onTap: () => _selectedOption("tesoura"),
+                child: Image.asset("", height: 100),
               ),
             ],
           ),
