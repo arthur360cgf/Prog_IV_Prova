@@ -98,18 +98,18 @@ class _JokenState extends State<Joken> {
             children: <Widget>[
               GestureDetector(
                 onTap: () => _selectedOption("pedra"),
-                child: Image.asset("", height: 100),
+                child: Image.asset('assets/images/pedra.jpeg', height: 100),
               ),
               GestureDetector(
                 onTap: () => _selectedOption("papel"),
                 child: Image.asset(
-                  "",
+                  'assets/images/papel.jpeg',
                   height: 100,
                 ),
               ),
               GestureDetector(
                 onTap: () => _selectedOption("tesoura"),
-                child: Image.asset("", height: 100),
+                child: Image.asset('assets/images/tesoura.jpeg', height: 100),
               ),
             ],
           ),
