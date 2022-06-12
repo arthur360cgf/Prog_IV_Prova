@@ -1,18 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:jokenpo/jokenpo.dart';
 
 void main() {
-  runApp(const JokenPo());
-}
-
-class JokenPo extends StatelessWidget {
-  const JokenPo({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'JokenPo',
-      theme: ThemeData.dark().copyWith(
-      ),
-    );
-  }
+  runApp(MaterialApp(
+    home: Joken(),
+  ));
 }
